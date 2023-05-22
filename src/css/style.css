@@ -1,0 +1,118 @@
+body {
+    display: grid;
+    grid-template-areas: "header header"
+                        "container informacoes" 
+                        "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1140px;
+    height: 500px;
+    background: url(../images/bg-desktop.svg) center center no-repeat;
+    background-size: 100%;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.header {
+    grid-area: header;
+    margin: 50px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.header img {
+    width: 15%;
+}
+
+.container {
+    grid-area: container;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.container img {
+    width: 50rem;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.informacoes {
+    grid-area: informacoes;
+    margin-top: 10px;
+    margin-left: 90px;
+    padding: 60px;
+}
+
+.informacoes h1 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.register {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 13px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #ffffff;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: end;
+    margin-left: 90rem;
+    margin-bottom: 50px;
+}
+
+.footer a i {
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+    justify-content: space-between;
+    transition: 0.3s ease;
+}
+
+.footer {
+    display: flex;
+    justify-content: right;
+    
+}
+
+.footer a {
+    padding-left: 2.5rem ;
+}
+
+.footer a i::after {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    left: -15px;
+    bottom: -13px;
+}
+
+.footer a:hover i {
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%)
+}
+
+.footer a i:hover::after {
+    border-color: hsl(300, 69%, 71%);
+}
