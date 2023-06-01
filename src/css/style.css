@@ -4,8 +4,7 @@ body {
                         "container informacoes" 
                         "footer footer";
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1140px;
-    height: 500px;
+    max-width: 1440px;
     background: url(../images/bg-desktop.svg) center center no-repeat;
     background-size: 100%;
     background-color: hsl(257, 40%, 49%);
@@ -94,7 +93,7 @@ p {
 }
 
 .footer a {
-    padding-left: 2.5rem ;
+    padding-left: 50px ;
 }
 
 .footer a i::after {
@@ -104,8 +103,8 @@ p {
     width: 40px;
     border: 2px solid #ffffff;
     border-radius: 50%;
-    left: -15px;
-    bottom: -13px;
+    left: -14px;
+    bottom: -14px;
 }
 
 .footer a:hover i {
